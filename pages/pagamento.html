@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/pagamento.css" />
+    <link rel="icon" href="../assets/logo.ico" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="../js/pagamento.js"></script>
+    <title>Karrinho</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#">
+          <img src="../assets/logo.png" alt="logo-da-pagina" />
+        </a>
+        <ul>
+          <li><a href="../pages/catalogo.html">Continuar Comprando</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <form id="frm" action="../pages/catalogo.html">
+          <div id="conteudo-form">
+            <fieldset id="dados-pedido">
+              <legend>Dados do Pedido</legend>
+              <div id="pedido">
+                <p class="item">
+                  <img
+                    class="item-img"
+                    src="../assets/cadeiras/classica.jpeg"
+                    alt=""
+                  />
+                  <span class="indice-item">1</span>
+                  - Cadeira Executiva Giratória — Qualiflex 1un x R$189,90
+                  <strong class="vl-item">
+                    R$ <span class="precoitem">189,90</span>
+                    <a class="excluir" onclick="excluirItemCarrinho(1)" href="#"
+                      ><i class="ph-trash-fill"></i>
+                    </a>
+                  </strong>
+                </p>
+                <p class="item">
+                  <img
+                    class="item-img"
+                    src="../assets/cadeiras/classica.jpeg"
+                    alt=""
+                  />
+                  <span class="indice-item">2</span>
+                  - Cadeira Executiva Giratória — Qualiflex 1un x R$189,90
+                  <strong class="vl-item">
+                    R$ <span class="precoitem">189,90</span>
+                    <a class="excluir" onclick="excluirItemCarrinho(2)" href="#"
+                      ><i class="ph-trash-fill"></i>
+                    </a>
+                  </strong>
+                </p>
+              </div>
+              <p class="total-pedido">
+                Total Pedido
+                <strong> R$ <span id="preco-total-ped">9,90</span> </strong>
+              </p>
+            </fieldset>
+            <fieldset id="dados-cartao">
+              <legend>Dados do Cartão</legend>
+
+              <div class="divInput">
+                <div class="divInternaIputs">
+                  <input
+                    id="nome"
+                    type="text"
+                    class="inputs"
+                    placeholder="Nome do Titular"
+                    autofocus="1"
+                    aria-label="Nome"
+                    required
+                  />
+                </div>
+
+                <div class="divInternaIputs">
+                  <input
+                    id="nro-cartao"
+                    type="text"
+                    class="inputs"
+                    placeholder="Nro Cartão'0123456789123456'"
+                    pattern="[0-9]+$"
+                    maxlength="16"
+                    minlength="16"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="divInput">
+                <div class="divInternaIputs">
+                  <input
+                    id="validade"
+                    type="text"
+                    class="inputs"
+                    placeholder="Validade Cartão '02/23' "
+                    required
+                  />
+                </div>
+
+                <div class="divInternaIputs">
+                  <input
+                    id="cvc"
+                    type="text"
+                    class="inputs"
+                    placeholder="CVC '012'"
+                    pattern="[0-9]+$"
+                    maxlength="3"
+                    minlength="3"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <fieldset id="dados-pagamento">
+              <legend>Parcelamento</legend>
+
+              <div class="divInputPagamento">
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" required /> 1X R$
+                    1200,00
+                  </label>
+                </div>
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 2X R$ 600,00
+                    <strong>SEM JUROS</strong>
+                  </label>
+                </div>
+
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 3X R$ 400,00
+                    <strong>SEM JUROS</strong>
+                  </label>
+                </div>
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 4X R$ 310,00
+                  </label>
+                </div>
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 5X R$ 250,00
+                  </label>
+                </div>
+              </div>
+              <div class="divInputPagamento">
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 6X R$ 215,00
+                  </label>
+                </div>
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 8X R$ 175,00
+                  </label>
+                </div>
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 10X R$ 150,00
+                  </label>
+                </div>
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 11X R$ 140,00
+                  </label>
+                </div>
+                <div class="divInternaIputsRadio">
+                  <label class="parcelas">
+                    <input type="radio" name="parcelamento" /> 12X R$ 130,00
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="divBtn">
+            <button id="button">Finalizar Compra</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <a href="https://jppg1992.github.io/dev-links/" target="_blank">
+        © 2023 João Paulo Godinho</a
+      >
+    </footer>
+  </body>
+</html>

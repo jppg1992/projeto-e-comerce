@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/catalogo.css" />
+    <link rel="icon" href="../assets/logo.ico" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="../js/catalogo.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>KShop</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="cart-button" class="sessao-amostra">
+          <a id="cart" href="./pagamento.html"><i class="ph-shopping-cart-fill"></i><span id="cart-itens">0</span></a>
+        </div>
+
+        <a href="#">
+          <img src="../assets/logo.png" alt="logo-da-pagina" />
+        </a>
+        <ul>
+          <li>
+            <a href="#" onclick="setSection('audio-video');">Aúdio e Vídeo</a>
+          </li>
+          <li>
+            <a href="#" onclick="setSection('computadores');">Computadores</a>
+          </li>
+          <li>
+            <a href="#" onclick="setSection('perifericos');">Periféricos</a>
+          </li>
+          <li>
+            <a href="#" onclick="setSection('escritorio');">Escritório</a>
+          </li>
+          <li><a href="#" onclick="setSection('servicos');">Serviços</a></li>
+          <li><a id="btn-usuario" href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container audio-video sessao-amostra">
+        <div class="produto" id="fone-hsk">
+          <img class="img-prod" src="../assets/fones/fone-de-ouvido-husky.jpg" alt="" />
+          <div class="infoProd" >
+            <p class="descr">Fone de Ouvido Sem Fio Husky</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 129,99</span>
+          </div>
+
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('fone-hsk')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="moni-hoop">
+          <img class="img-prod" src="../assets/monitor/monitor-hoopson.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Monitor Hoopson 24'' Led</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 1250,99</span>
+          </div>
+
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('moni-hoop')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="cx-jbl">
+          <img class="img-prod" src="../assets/caixa-som/caixa-JBL-charge.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Caixa JBL Charge 5, 30W RMS</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 899,00</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('cx-jbl')"  href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="moni-husk">
+          <img class="img-prod" src="../assets/monitor/monitor-gamerhusky.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Monitor Husky Snow 23.6' LED</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 1149,00</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('moni-husk')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="moni-aoc">
+          <img class="img-prod" src="../assets/monitor/monitor-aoc.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Monitor AOC 21.5 LED Full HD</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 825,00</span>
+          </div>
+
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('moni-aoc')"  href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="fone-akg">
+          <img class="img-prod" src="../assets/fones/headphone-AKG.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Headphone AKG Preto/Dourado</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 329,99</span>
+          </div>
+
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('fone-akg')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="fone-jbl">
+          <img class="img-prod" src="../assets/fones/fone-intra-auricular-JBL.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Fone Ouvido Intra Auricular JBL</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 75,99</span>
+          </div>
+
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('fone-jbl')" href="#">+</a>
+          </div>
+        </div>
+        <div class="produto" id="cx-mondial">
+          <img class="img-prod"src="../assets/caixa-som/caixa-amplificada-mondial.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Caixa Amplif. Mondial 400W RMS</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 575,99</span>
+          </div>
+
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('cx-mondial')" href="#">+</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container computadores sessao-oculta">
+        <div class="produto produto-comp" id="pc-compusonic">
+          <img class="img-prod" src="../assets/computadores/compusonicI3.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Desktop Compusonic Intel i3 10ª geração 3.4ghz</p>
+            <p class="descr">4gb DDR4, SSD 240 GB, SO Linux</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 2399,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('pc-compusonic')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto produto-comp" id="note-sansung">
+          <img class="img-prod" src="../assets/computadores/note-sansung_.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Samsung Book 15.6"FHD Cinza Core I5</p>
+            <p class="descr">8gb DDR4, SSD 256 GB, SO Windows 11</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 3150,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('note-sansung')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto produto-comp" id="pc-lenovo">
+          <img class="img-prod" src="../assets/computadores/desk-thinkcentre.png" alt="" />
+          <div class="infoProd">
+            <p class="descr">Lenovo SFF Thinkcentre Core I3</p>
+            <p class="descr">8gb DDR4, SSD 512 GB, SO Windows 11</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 2999,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('pc-lenovo')" href="#">+</a>
+          </div>
+        </div>
+         
+ 
+      </section>
+
+      <section class="container perifericos sessao-oculta">
+        <div class="produto" id="kit-mm-logitech">
+          <img class="img-prod" src="../assets/perifericos/kit-logitech.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Teclado e Mouse c/fio USB Logitech MK120</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 120,00</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('kit-mm-logitech')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="pen-kingston">
+          <img class="img-prod" src="../assets/perifericos/pen-kingston-32gb.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Pen Drive Exodia 32GB Kingston</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 24,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('pen-kingston')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="mouse-logitech">
+          <img class="img-prod" src="../assets/perifericos/mouse-logitech.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Mouse com fio USB Logitech M90</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 39,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('mouse-logitech')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="cabo-energia">
+          <img class="img-prod" src="../assets/perifericos/cabo-forca.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Cabo de Energia 1.5 Metros</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 15,90</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('cabo-energia')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="webcam-logitech">
+          <img class="img-prod" src="../assets/perifericos/webcam-logitech.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Webcam Full HD Logitech C920s com Microfone</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 469,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('webcam-logitech')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="mouse-multilaser">
+          <img class="img-prod" src="../assets/perifericos/mouse-multilaser.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Mouse Multi MO300 USB Óptico</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 9,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('mouse-multilaser')" href="#">+</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container escritorio sessao-oculta">
+        <div class="produto" id="cadeira-dorel">
+          <img class="img-prod" src="../assets/cadeiras/dorel.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Cadeira Giratória Dorel Presidente Blend</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 599,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus"  onclick="salvarItem('cadeira-dorel')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="mesa-dimoves">
+          <img class="img-prod" src="../assets/mesas/dimovesc.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Mesa Escritório 150x60 com 2 gavetas</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 399,99</span>
+          </div>
+          <di class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('mesa-dimoves')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="cadeira-mesh">
+          <img class="img-prod" src="../assets/cadeiras/mesh.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Cadeira Presidente Giratória Tela Mesh Preta</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 420,00</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('cadeira-mesh')" href="#">+</a>
+          </div>
+        </div>
+
+        <div class="produto" id="mesa-martinucci">
+          <img class="img-prod" src="../assets/mesas/martinucci.jpg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Mesa Escritório em L 150cm Martinucci Iron</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 699,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('mesa-martinucci')" href="#">+</a>
+          </div>
+        </div>
+        <div class="produto" id="cadeira-qualiflex">
+          <img class="img-prod" src="../assets/cadeiras/classica.jpeg" alt="" />
+          <div class="infoProd">
+            <p class="descr">Cadeira Executiva Giratória — Qualiflex</p>
+            <span class="preco">R$ </span><span class="preco prc-un"> 189,99</span>
+          </div>
+          <div class="prod-qtd">
+            <label for="qtd">Quantidade: </label>
+            <input class="qtd" id="qtd" type="number" min="0" step="1" max="99" value="0" />
+            <a class="plus" onclick="salvarItem('cadeira-qualiflex')" href="#">+</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container servicos sessao-oculta">
+        <p class="p-info-emp"> <span class="sp-emp"> A KHNUM </span> é uma software house que busca soluções tecnológicas para diversas necessidades da sua Empresa, automatizando
+          processos comercias e financeiros através da implementação de softwares adequados às suas necessidades,
+          proporcionando inovações e facilidade em controles específicos para o seu dia a dia.
+        </p>
+
+        <h1 class="info-pacotes">CONFIRA NOSSOS PACOTES DE SERVIÇO</h1>
+        <table class="tabela" border="8" >
+          <thead>
+            
+            <tr>
+              <th class="tb-head" rowspan="2">
+                <h1>
+                  <img src="../assets/logo.png" alt="logo-da-empresa" />hnum
+                </h1>
+              </th>
+              <th class="tb-head tb-basico" rowspan="2">BÁSICO</th>
+              <th class="tb-head tb-light" rowspan="2">LIGHT</th>
+              <th class="tb-head tb-medio" rowspan="2">MÉDIO</th>
+              <th class="tb-head tb-avancado" rowspan="2">AVANÇADO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="row-head">USUÁRIOS</th>
+              <td class="tb-item">1</td>
+              <td class="tb-item">1</td>
+              <td class="tb-item">3</td>
+              <td class="tb-item">3</td>
+            </tr>
+            <tr>
+              <th class="row-head">PRODUTOS</th>
+              <td class="tb-item">100</td>
+              <td class="tb-item">1000</td>
+              <td class="tb-item">2000</td>
+              <td class="tb-item">5000</td>
+            </tr>
+            <tr>
+              <th class="row-head">BALANÇA</th>
+              <td class="tb-item">X</td>
+              <td class="tb-item">X</td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+            </tr>
+            <tr>
+              <th class="row-head">FINANCEIRO</th>
+              <td class="tb-item">X</td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+            </tr>
+            <tr>
+              <th class="row-head">GESTÃO DE VENDAS</th>
+              <td class="tb-item">X</td>
+              <td class="tb-item">X</td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+            </tr>
+            <tr>
+              <th class="row-head">GESTÃO DE COMPRAS</th>
+              <td class="tb-item">X</td>
+              <td class="tb-item">X</td>
+              <td class="tb-item">X</td>
+              <td class="tb-item"><i class="ph-check-fill"></i></td>
+            </tr>
+            <tr>
+              <th class="row-head">GESTÃO DE ESTOQUE</th>
+              <td class="tb-item">X</td>
+              <td class="tb-item"><i class="ph-check-fill"></i></td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+              <td class="tb-item"><i class="ph-check-fill"></td>
+            </tr>
+            <tr>
+              <th class="row-head">NFC-e</th>
+              <td class="tb-item">100</td>
+              <td class="tb-item">1000</td>
+              <td class="tb-item">2000</td>
+              <td class="tb-item">5000</td>
+            </tr>
+            <tr>
+              <th class="row-head">NF-e</th>
+              <td class="tb-item">X</td>
+              <td class="tb-item">100</td>
+              <td class="tb-item">200</td>
+              <td class="tb-item">500</td>
+            </tr>
+            <tr>
+              <th class="row-head">SUPORTE</th>
+              <td class="tb-item">2h</td>
+              <td class="tb-item">4h</td>
+              <td class="tb-item">6h</td>
+              <td class="tb-item">8h</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr >
+              <th colspan="5"  class="tb-info">PARA MAIS INFORMAÇÕES OU PACOTES CUSTOMIZADOS FAVOR ENTRAR EM CONTATO.</td>
+            </tr>
+             
+            <tr>
+                <th colspan="5" class="tb-contatos">
+                  <a href="tel:+555333111700"><ion-icon  name="call" role="img" class="md hydrated" aria-label="logo telefone"></ion-icon> (53) 3311-1700</a> 
+                  <a href="mailto:contato@khnum.net.br"><ion-icon   name="mail" role="img" class="md hydrated" aria-label="logo e-mail"></ion-icon> contato@khnum.net.br</a> 
+                  <a href="https://wa.me/555333112700" target="_blank"><ion-icon   name="logo-whatsapp" role="img" class="md hydrated" aria-label="logo whatsapp"></ion-icon> (53) 3311-2700</a> 
+                  <a href="https://www.instagram.com/khnumsistcom/?hl=af" target="_blank"><ion-icon   name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon> @khnumsistcom</a> 
+                  <a href="https://www.facebook.com/KhnumSistCom" target="_blank"><ion-icon  name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon> KhnumSistCom</a>
+                </th>
+            </tr> 
+          </tfoot>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <a href="https://jppg1992.github.io/dev-links/" target="_blank">
+        © 2023 João Paulo Godinho</a
+      >
+    </footer>
+  </body>
+</html>

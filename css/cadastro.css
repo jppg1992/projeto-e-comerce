@@ -1,0 +1,104 @@
+.container {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 80vh;
+  width: 100%;
+}
+
+#frm {
+  margin-top: 1%;
+  background-color: white;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 400px;
+  text-align: center;
+  gap: 0.2rem;
+  padding-top: 0.5%;
+}
+
+#frm fieldset {
+  width: 375px;
+  border-radius: 8px;
+  border: 1px solid #dddfe2;
+  padding: 5px 5px 5px 5px;
+}
+
+#conteudo-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.divInput {
+  display: block;
+  text-align: center;
+  width: 396px;
+  height: 132.078px;
+}
+
+.divBtn {
+  flex: 1;
+  box-sizing: border-box;
+  display: block;
+  text-align: left;
+
+  padding: 15px 0 0 45px;
+}
+.divInternaIputs {
+  flex: 1;
+  padding: 3px 16px;
+  width: 330px;
+}
+.inputs {
+  flex: 1;
+  background: #ffffff url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-size: 20px;
+  width: 300px;
+  height: 25px;
+  line-height: 16px;
+  padding: 25px 16px;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+#button {
+  flex: 1;
+  box-sizing: border-box;
+  height: 48px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-style: bold;
+  text-align: center;
+  border-radius: 6px;
+
+  background-color: #0653b7;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 330px;
+  margin: 0 0 0 0px;
+  cursor: pointer;
+}
+
+h1 {
+  color: #0653b7;
+  font-size: 60px;
+  margin-bottom: 15px;
+  line-height: 2.8rem;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 500;
+}

@@ -1,0 +1,115 @@
+.container {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 80.2vh;
+  width: 100vw;
+  padding: 20vh 0 0 10vw;
+}
+
+.login {
+  margin-left: 5%;
+  padding-top: 5%;
+  flex: 1 1;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.info {
+  text-align: left;
+}
+
+/* box e elementos do form de login*/
+#login {
+  flex: 1 1;
+  align-items: center;
+
+  margin: 40px 0 0;
+  padding: 10px 0 24px;
+  width: 300px;
+  height: 350px;
+}
+
+#frm {
+  margin-top: -50px;
+  flex: 1;
+  background-color: white;
+  border-radius: 3%;
+  display: block;
+  width: 396px;
+  height: 315px;
+  text-align: center;
+  padding: 60px 10px 60px 15px;
+}
+
+.divInput {
+  display: block;
+  text-align: center;
+  width: 396px;
+  height: 132.078px;
+}
+
+.divBtn {
+  flex: 1;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+
+  padding: 20px 0 0 20px;
+}
+.divInternaIputs {
+  flex: 1;
+  padding: 6px 16px;
+  width: 330px;
+}
+.inputs {
+  flex: 1;
+  background: #ffffff url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-size: 20px;
+  width: 330px;
+  height: 25px;
+  line-height: 16px;
+  padding: 25px 16px;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+#button {
+  flex: 1;
+  box-sizing: border-box;
+  height: 48px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-style: bold;
+  text-align: center;
+  border-radius: 6px;
+
+  background-color: #0653b7;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 330px;
+  margin: 0 0 0 -30px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+h1 {
+  color: #0653b7;
+  font-size: 60px;
+  margin-bottom: 15px;
+  line-height: 2.8rem;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 500;
+}

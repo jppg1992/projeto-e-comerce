@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" href="./assets/logo.ico" />
+    <script src="./js/login.js"></script>
+    <title>KLogin</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#">
+          <img src="./assets/logo.png" alt="logo-da-pagina" />
+        </a>
+        <ul>
+          <li><a href="./pages/cadastro.html">Criar Conta</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <div class="container">
+      <div class="login">
+        <div class="info">
+          <h1>
+            <img src="./assets/logo.png" alt="logo-da-empresa" />hnum S.A.Com.
+          </h1>
+
+          <p>
+            Precisando de equipamentos para automatizar sua empresa? <br />
+            Também confira nossas soluções em software. <br />
+            Oferecemos maneiras de otimizar e automatizar o seu trabalho!
+          </p>
+        </div>
+      </div>
+      <div id="login">
+        <form id="frm" onsubmit="validarLogin(usuario.value,senha.value)" >
+          <div id="divInput">
+            <div class="divInternaIputs">
+              <input type="text" class="inputs" id="usuario" data-testid="royal_email" placeholder="Email" autofocus="1"
+                 required />
+            </div>
+
+            <div class="divInternaIputs">
+              <input class="inputs" id="senha" type="password" placeholder="Senha" required />
+            </div>
+          </div>
+
+          <div class="divBtn"> 
+              <button id="button">Entrar</button> 
+          </div>
+        </form>
+
+        
+      </div>
+    </main>
+    <footer>
+      <a href="https://jppg1992.github.io/dev-links/" target="_blank">
+        © 2023 João Paulo Godinho</a
+      >
+    </footer>
+  </body>
+</html>
