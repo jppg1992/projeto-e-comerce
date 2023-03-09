@@ -117,3 +117,12 @@ function carregaCarrinho() {
     btn.setAttribute('href', '#')
   }
 }
+
+function sair() {
+  const bt = document.getElementById('btn-usuario')
+  if (confirm('Deseja efetuar logout?')) {
+    bt.setAttribute('href', '../login.html')
+  } else {
+    bt.setAttribute('href', '#')
+  }
+}

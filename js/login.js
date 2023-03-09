@@ -1,5 +1,6 @@
 function validarLogin(login, senha) {
-  var passwd = localStorage.getItem(login)
+ 
+  var passwd = localStorage.getItem(login) 
   if (passwd === senha) {
     const form = document.getElementById('frm')
     form.setAttribute('action', './pages/catalogo.html')
