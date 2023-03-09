@@ -37,7 +37,7 @@
 
 .produto > img {
   flex: 1;
-  width: 90%; 
+  width: 90%;
   height: 1%;
   padding: 0 1% 0 10%;
 }
@@ -52,7 +52,7 @@
   padding: 5px 8px;
 }
 
-#qtd {
+.qtd {
   background: #ffffff url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
   border: 1px solid #dddfe2;
   color: #1d2129;
@@ -70,7 +70,7 @@
   padding: 0 5% 5% 5%;
   /** border: 1px solid #0653b7;**/
   height: 15%;
-  
+
   font-size: 1em;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .preco {
-  text-align: center; 
+  text-align: center;
   font-weight: bold;
   padding-top: 10px;
 }

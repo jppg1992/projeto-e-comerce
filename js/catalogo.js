@@ -91,10 +91,14 @@ function salvarItem(id) {
   pedido.push(item)
   pedido = JSON.stringify(pedido)
   // console.log(pedido)
-  localStorage.setItem('Pedido', pedido)
+  if (qtd > 0) {
+    localStorage.setItem('Pedido', pedido)
 
-  alert('Item adicionado ao carrinho')
-  carregaCarrinho()
+    alert('Item adicionado ao carrinho')
+    carregaCarrinho()
+  } else {
+    alert('Item com quantidade ZERO não pode ser adicionado ao carrinho !!')
+  }
 }
 
 function carregaCarrinho() {
@@ -103,6 +107,13 @@ function carregaCarrinho() {
   if (pedido) pedido = JSON.parse(pedido)
   else pedido = []
 
-  qtd = document.getElementById('cart-itens')
+  const qtd = document.getElementById('cart-itens')
   qtd.textContent = pedido.length
+
+  const btn = document.getElementById('cart')
+  if (pedido.length > 0) {
+    btn.setAttribute('href', './pagamento.html')
+  } else {
+    btn.setAttribute('href', '#')
+  }
 }
