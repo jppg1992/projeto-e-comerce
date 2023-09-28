@@ -121,7 +121,7 @@ function carregaCarrinho() {
 function sair() {
   const bt = document.getElementById('btn-usuario')
   if (confirm('Deseja efetuar logout?')) {
-    bt.setAttribute('href', '../login.html')
+    bt.setAttribute('href', 'https://jppg1992.github.io/projeto-e-comerce/')
   } else {
     bt.setAttribute('href', '#')
   }
